@@ -1,7 +1,6 @@
 // import React from 'react';
 import type { GetStaticProps } from 'next';
 import styles from 'styles/Home.module.scss';
-
 import { getAnalytics } from 'firebase/analytics';
 import Link from 'next/link';
 import { getAllProducts } from '@lib/products';
@@ -11,8 +10,6 @@ import Layout from '@components/layout';
 import { useDispatch } from 'react-redux';
 import { setProducts } from 'store/slices/products';
 import { app } from 'firebaseConfig';
-
-console.log('Dan');
 
 if (typeof window !== 'undefined') {
   const analytics = getAnalytics(app);

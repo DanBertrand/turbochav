@@ -9,7 +9,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const { id, name, description, images, price, quantity } = product;
 
   const handleClick = () => {
-    router.push(`http://localhost:3000/products/${id}`);
+    router.push(`/products/${id}`);
   };
 
   console.log('Product', product);
