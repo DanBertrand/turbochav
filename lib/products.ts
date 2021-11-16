@@ -1,6 +1,6 @@
 import { query, getDocs } from 'firebase/firestore';
 import { collection, doc, getDoc } from '@firebase/firestore';
-import { db } from 'pages';
+import { db } from 'firebaseConfig';
 import { Product } from 'types';
 
 export const getAllProducts = async () => {

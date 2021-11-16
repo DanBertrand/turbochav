@@ -6,7 +6,7 @@ import {
   updateDoc,
 } from '@firebase/firestore';
 import React, { useState } from 'react';
-import { db, app } from './index';
+import { db, app } from 'firebaseConfig';
 import {
   getDownloadURL,
   getStorage,

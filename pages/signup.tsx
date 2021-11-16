@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { getAuth } from 'firebase/auth';
-import { app } from './index';
+import { app } from 'firebaseConfig';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Link from 'next/link';
 import { useRouter } from 'next/dist/client/router';

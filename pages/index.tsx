@@ -1,9 +1,7 @@
 // import React from 'react';
 import type { GetStaticProps } from 'next';
 import styles from 'styles/Home.module.scss';
-import { firebaseConfig } from 'firebase';
-import { getFirestore } from 'firebase/firestore';
-import { initializeApp } from 'firebase/app';
+
 import { getAnalytics } from 'firebase/analytics';
 import Link from 'next/link';
 import { getAllProducts } from '@lib/products';
@@ -12,11 +10,9 @@ import ProductCard from '@components/productCard';
 import Layout from '@components/layout';
 import { useDispatch } from 'react-redux';
 import { setProducts } from 'store/slices/products';
+import { app } from 'firebaseConfig';
 
 console.log('Dan');
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
 
 if (typeof window !== 'undefined') {
   const analytics = getAnalytics(app);

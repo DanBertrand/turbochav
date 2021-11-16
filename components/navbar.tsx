@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { app } from 'pages/index';
+import { app } from 'firebaseConfig';
 import { getAuth, signOut } from 'firebase/auth';
 import Link from 'next/link';
 import styles from 'styles/Navbar.module.scss';
