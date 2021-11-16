@@ -1,0 +1,8 @@
+.container {
+  border: 3px solid black;
+  display: flex;
+  flex: 0 0 200px;
+  &:hover {
+    cursor: pointer;
+  }
+}
